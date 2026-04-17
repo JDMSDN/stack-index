@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Identity;
-using StackIndex.Data;
+using Infrastructure;
 
 namespace StackIndex.Components.Account
 {

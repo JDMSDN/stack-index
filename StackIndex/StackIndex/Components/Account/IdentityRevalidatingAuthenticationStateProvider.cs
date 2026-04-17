@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using StackIndex.Data;
+using Infrastructure;
 using System.Security.Claims;
 
 namespace StackIndex.Components.Account

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using StackIndex.Client.Pages;
 using StackIndex.Components;
 using StackIndex.Components.Account;
-using StackIndex.Data;
+using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

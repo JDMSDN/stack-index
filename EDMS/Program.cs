@@ -24,7 +24,7 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
-builder.Services.AddDbContext<DocumentDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     var connectionString = builder.Configuration
         .GetConnectionString("DefaultConnection");

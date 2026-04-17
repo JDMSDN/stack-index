@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using StackIndex.Components.Account.Pages;
 using StackIndex.Components.Account.Pages.Manage;
-using StackIndex.Data;
+using Infrastructure;
 using System.Security.Claims;
 using System.Text.Json;
 
