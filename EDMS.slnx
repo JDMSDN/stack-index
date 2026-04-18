@@ -4,4 +4,6 @@
   <Project Path="Domain/Domain.csproj" Id="be99cdfe-807a-43c4-818a-ed2064b23cf9" />
   <Project Path="EDMS/EDMS.csproj" />
   <Project Path="Infrastructure/Infrastructure.csproj" Id="c103fb55-28ba-4317-b89a-1b82af76b310" />
+  <Project Path="StackIndex/StackIndex.Client/StackIndex.Client.csproj" Id="9b1fe4ce-3415-4a34-aac0-82551436fafb" />
+  <Project Path="StackIndex/StackIndex/StackIndex.csproj" Id="db4424ed-f67a-4d2b-9578-a6f2313988a7" />
 </Solution>
