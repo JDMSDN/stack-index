@@ -9,8 +9,15 @@ namespace StackIndex.Controllers;
 [Route("[controller]")]
 public class DocumentController : ControllerBase
 {
+    private readonly IAmazonS3 _amazonS3;
+
+    public DocumentController(IAmazonS3 amazonS3)
+    {
+        _amazonS3 = amazonS3;
+    }
+
     [HttpGet("url")]
-    public Results<Ok<string>, InternalServerError> GetPresignedUrlAsync(IAmazonS3 client)
+    public Results<Ok<string>, InternalServerError> GetPresignedUrlAsync()
     {
         string url = string.Empty;
 
@@ -24,7 +31,7 @@ public class DocumentController : ControllerBase
                 Expires = DateTime.UtcNow.AddHours(1)
             };
 
-            url = client.GetPreSignedURL(request);
+            url = _amazonS3.GetPreSignedURL(request);
         }
         catch (AmazonS3Exception ex)
         {
