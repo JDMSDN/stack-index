@@ -26,7 +26,7 @@ public class DocumentController : ControllerBase
             var request = new GetPreSignedUrlRequest
             {
                 BucketName = "stack-index",
-                Key = "sample.txt",
+                Key = "sample.pdf",
                 Verb = HttpVerb.PUT,
                 Expires = DateTime.UtcNow.AddHours(1)
             };
